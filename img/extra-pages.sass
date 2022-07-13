@@ -1,0 +1,106 @@
+.bg
+    &-wrap
+        display: flex
+        margin-top: 20px
+        max-height: 536px
+        .order-form
+            max-height: 533px
+            margin-left: 15px
+        .bg-mobile
+            display: none
+    &-header
+        min-width: 800px
+        background-color: #000
+        position: relative
+        .bg-name
+            position: absolute
+            left: 0
+            top: 0
+            // background-color: #c00
+            background-color: rgba(#c00, .77)
+            width: 100%
+            padding: 5px
+            color: #fff
+            font-size: 18px
+        .bg-description
+            position: absolute
+            // top: 50%
+            bottom: 0
+            left: 50%
+            transform: translateX(-50%)
+            z-index: 99
+            color: #fff
+            // max-width: 500px
+            width: 100%
+            // background-color: #c00
+            background-color: rgba(#c00, .77)
+            padding: 10px
+            h1
+                margin-top: 0
+            strong
+                font-weight: normal
+            span
+                display: block
+                padding-top: 10px
+                font-size: 18px
+                font-weight: bold
+.buy
+    align-items: center
+.order-form-top
+    input
+        width: 100%
+.posts
+    text-align: left
+    a
+        color: #cc2b33
+        font-weight: bold
+        text-decoration: underline
+@media(hover: hover) and (pointer: fine)
+    .posts
+        a:hover
+            text-decoration: none
+@media (max-width: 1300px)
+    img
+        max-width: 100%
+    .bg
+        &-wrap
+            max-height: unset
+            flex-direction: column
+            .order-form
+                margin-top: 5px
+                margin-left: 0
+            .bg-header
+                display: none
+            .bg-mobile
+                display: block
+                .bg-description
+                    font-size: 14px
+                    h1
+                        font-weight: bold
+                        font-size: 32px
+                        margin-top: 10px
+                        margin-bottom: 5px
+                    strong
+                        font-weight: normal
+                    span
+                        display: block
+                        margin: 10px 0
+                        font-weight: bold
+    .container
+        max-width: 800px
+    .bg-name
+        display: block
+        margin-top: -5px
+        font-size: 32px
+        color: #fff
+        background-color: #c00
+        padding: 5px
+        width: 100%
+        font-weight: bold
+        margin-bottom: 5px
+@media (max-width: 600px)
+    .bg-wrap .bg-mobile .bg-description h1
+        font-size: 16px
+        margin-bottom: 5px
+        margin-top: 15px
+    

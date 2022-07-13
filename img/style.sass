@@ -1,0 +1,349 @@
+$red: darken(red, 10%)
+*
+    box-sizing: border-box
+body
+    font-family: sans-serif
+    padding: 0
+    margin: 0
+a
+    text-decoration: none
+header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 20px
+    text-align: center
+    position: fixed
+    width: 100%
+    background-color: #fff
+    border-bottom: 3px solid red
+    z-index: 999999
+    a
+        color: #000
+.buy-list
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    font-size: 12px
+    // max-width: 320px
+    max-width: 800px
+    margin: auto
+    a
+        display: block
+        background: #eee
+        margin-bottom: 20px
+        padding-bottom: 10px
+        width: 100%
+        min-width: 320px
+        max-width: 320px
+        margin: 10px 5px
+    .buy
+        max-width: 320px
+        padding: 5px 10px
+        margin: 0 auto 10px
+.author
+    display: flex
+    align-items: center
+    img
+        margin-right: 10px
+        border-radius: 50%
+        width: 50px
+        height: 50px
+.name
+    display: flex
+    flex-direction: column
+    text-align: left
+    .work-time
+        font-size: 12px
+    img
+        max-width: 50px
+.email, .phone, .whatsapp
+    display: flex
+    align-items: center
+    img
+        max-height: 20px
+        margin-right: 10px
+.attention
+    font-size: 14px
+    color: $red
+h1
+    font-size: 20px
+.map
+    opacity: 1
+    height: 400px
+    width: 100%
+    margin-top: 20px
+    border: 0
+    transition: .2s
+    &.active
+        // display: none
+        height: 0
+        visibility: hidden
+        opacity: 0
+    &-show
+        font-weight: bold
+        text-decoration: underline
+        cursor: pointer
+.container
+    max-width: 1200px
+    margin: auto
+    
+main
+    padding-top: 100px
+    text-align: center
+.products
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    a
+        width: 280px
+    button
+        width: 280px
+        border: 0
+        font-size: 16px
+        cursor: pointer
+    .info
+        display: flex
+        flex-direction: column
+        justify-content: center
+        text-align: center
+        width: 280px
+        min-height: 300px
+        padding: 20px 0
+        color: #000
+        margin: 10px
+        position: relative
+        a:first-child
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            min-height: 300px
+            color: #000
+        h2
+            font-size: 16px
+            font-weight: normal
+            margin: 5px
+        img
+            max-width: 280px
+            margin: auto
+            padding-top: 20px
+    &-list
+        display: flex
+        justify-content: center
+        width: 100%
+        padding: 25px
+        margin-top: 20px
+        border-top: 1px dashed red
+        border-bottom: 1px dashed red
+        background-color: #f7f7f7
+        color: #000
+        font-size: 18px
+        span
+            color: $red
+            margin-left: 10px
+        li
+            margin-bottom: 10px
+    .buy
+        max-width: 280px
+        margin: auto
+ul
+    list-style: none
+    padding: 0
+.list-advantages
+    li
+        margin-bottom: 7px
+.advantages
+    display: flex
+    flex-wrap: wrap
+.advantage
+    width: 400px
+    min-height: 200px
+    padding: 20px
+    margin: auto
+footer
+    text-align: center
+    margin-bottom: 50px
+    ul
+        font-size: 12px
+.buy
+    display: flex
+    justify-content: center
+    background-color: $red
+    padding: 20px 50px
+    margin-top: 10px
+    color: #fff
+    transition: .2s
+.block
+    padding: 0 20px
+.about
+    font-size: 12px
+    &-header
+        text-transform: uppercase
+        span
+            font-size: 24px
+            color: #424143
+        h2
+            font-size: 24px
+            margin-top: 0
+            color: #cc2b33
+            letter-spacing: 0.5px
+.logo
+    padding-top: 10px
+    max-width: 100%
+.extra-products
+    margin-bottom: 20px
+    font-weight: bold
+    color: $red
+    cursor: pointer
+.privacy
+    position: fixed
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    padding: 5px
+    background-color: #eee
+    color: #000
+.price-protocol
+    display: block
+    margin-top: 20px
+    font-weight: bold
+    color: #000
+    span
+        color: $red
+.offer
+    font-size: 12px
+    color: #333
+.order-form
+    p
+        width: 100%
+        text-align: center
+        margin-bottom: 5px
+.buy-top
+    display: flex
+    align-items: center
+    width: 100%
+    // max-width: 430px
+    // height: 38px
+    // padding: 15px
+    border: 0
+    margin: auto
+    margin-bottom: 10px
+    font-size: 16px
+    cursor: pointer
+footer .order-form
+    margin-top: 15px
+.about-company
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    margin-bottom: 15px
+    li
+        display: flex
+        flex-direction: column
+        width: 150px
+        margin: 5px
+        b
+            font-size: 54px
+            color: $red
+h1
+    font-size: 24px
+@media(hover: hover) and (pointer: fine)
+    .buy-list
+        a:hover .buy
+            background: darken(red, 20%)
+    .products
+        &-list
+            a:hover
+                text-decoration: underline
+    a.products-list:hover
+        // border-top: 1px solid red
+        // border-bottom: 1px solid red
+    a.products-list:hover span
+        text-decoration: underline
+    .buy:hover
+        background-color: darken(red, 20%)
+    header
+        a:hover
+            text-decoration: underline
+    .price-protocol:hover span
+        text-decoration: underline   
+@media (max-width: 1250px)
+    .container
+        padding: 20px
+        max-width: 800px
+@media (max-width: 1050px)
+    main
+        padding-top: 150px
+    header
+        flex-wrap: wrap
+        .block
+            width: 50%
+            &:nth-child(3), &:nth-child(4)
+                margin-top: 20px
+    .toggle
+        display: block            
+    .phone, .whatsapp
+        &.active
+            display: flex
+@media (max-width: 800px)
+    h1
+        font-size: 16px
+    main
+        padding-top: 200px
+    header
+        .block
+            display: flex
+            justify-content: center
+            width: 100%
+            &:nth-child(2)
+                margin-top: 20px
+@media (max-width: 700px)
+    h1
+        font-size: 14px
+        font-weight: normal
+    .about-company
+        max-width: 320px
+        margin: 10px auto
+        li
+            margin: 2px
+            width: 130px
+            b
+                font-size: 32px
+    .popular-products
+        font-size: 14px
+    .products
+        .info
+            width: 100%
+            max-width: 370px
+            img
+                max-width: 100%
+        a
+            width: 100%
+        .buy
+            max-width: 100%
+            width: 100%
+            margin-top: 20px
+@media (max-width: 500px)
+    main
+        padding-top: 150px
+    header
+        padding: 10px 5px
+        .block
+            padding: 0 5px
+            &:nth-child(2), &:nth-child(3), &:nth-child(4)
+                margin-top: 20px
+    .name
+        font-size: 14px
+    .author
+        img
+            max-width: 30px
+            max-height: 30px
+    h1
+        max-width: 310px
+        margin: auto
+@media (max-widht: 350px)
+    .products
+        .buy
+            margin-top: 0
